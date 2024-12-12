@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color:pink;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #f2f2f2;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+section {
+    margin: 2em 0;
+}
+
+.cake {
+    display: inline-block;
+    margin: 1em;
+    width: 300px;
+    text-align: center;
+}
+
+.cake img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.order-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.order-form input, .order-form select, .order-form textarea, .order-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    background-color:pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #e57878;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: white;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cake {
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    .order-form {
+        padding: 1em;
+    }
+}
+
+.order-form button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: #e57878;
+    transform: scale(1.05);
+}
